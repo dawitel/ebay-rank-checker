@@ -16,7 +16,7 @@ Scrapping the rank of each item of a specific store
 ![Flowchart eBay Rank Checker](https://github.com/user-attachments/assets/764eb698-94b1-4726-9915-136da38d7803)
 <br>
 
-## [Explanation video]() <br>
+## [Explanation video](https://youtu.be/OFYwmoIBdzA) <br>
 
 # Branch
 
