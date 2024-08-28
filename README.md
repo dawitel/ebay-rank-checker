@@ -9,6 +9,7 @@ Scrapping the rank of each item of a specific store
 - [Installation](#installation)
 - [Development setup](#development-setup)
 - [External Tools](#external-tools)
+- [Reference](#reference)
 
 # Specification
 
@@ -56,3 +57,21 @@ npm run tsx [filename]
 - [scrape.do](https://scrape.do/)
 - [crawlbase](https://crawlbase.com/)
 - [brightdata](https://brightdata.com/pricing/web-scraper)
+
+# Reference
+
+### Currency in JPY
+
+![Currency in JPY](https://github.com/user-attachments/assets/7b2c8a7d-808a-4de6-b77d-80d6ec6ad6f4) <br>
+
+### Currency in USD
+
+![Currency in USD](https://github.com/user-attachments/assets/11172c96-2df2-48bb-818c-8ddcf8936daa)
+
+### VPS-JP in JPY
+
+![VPS-JP in JPY](https://github.com/user-attachments/assets/5f155f30-59c0-4c8c-8066-a4d10a2d6483)
+
+### VPS-US in USD
+
+![VPS-US in USD](https://github.com/user-attachments/assets/54dad4b3-1416-497f-851f-7c5eca3ddc97)
