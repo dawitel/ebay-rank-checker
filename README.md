@@ -18,6 +18,8 @@ Scrapping the rank of each item of a specific store
 
 ## [Explanation video](https://youtu.be/OFYwmoIBdzA) <br>
 
+## [Example I/O file](https://docs.google.com/spreadsheets/d/1FgUaxnBNnuh9378PJOipahjW4SIHXTQ0TSbH97q6YHU/edit?usp=sharing) <br>
+
 # Branch
 
 Please develop features on feature/[name] branches and merge them into the dev branch. <br>
