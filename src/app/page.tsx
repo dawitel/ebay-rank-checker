@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 export default function Home() {
   const { toast } = useToast();
-  const router = useRouter()
+  const router = useRouter();
   const handleFileUpload = async (file: File) => {
     console.log("clicked");
     const formData = new FormData();
@@ -26,7 +26,7 @@ export default function Home() {
           description: "Wait for the processed CSV file in your inbox!",
           action: <ToastAction altText="success button">cancel</ToastAction>,
         });
-        router.refresh()
+        router.refresh();
       } else {
         toast({
           variant: "destructive",
@@ -48,13 +48,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-        <a
-          className="rounded-2xl bg-muted px-4 py-1.5 text-sm font-medium"
-          target="_blank"
-          href="https://www.docs.ez-monitor.com/"
-        >
+        <p className="rounded-2xl bg-gray-200 hover:bg-gray-100 cursor-pointer transition px-4 py-1.5 text-sm font-medium">
           👋Hi Yoshi!
-        </a>
+        </p>
         <h1 className="font-sans text-balance font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Upload Your CSV file 📁
         </h1>
