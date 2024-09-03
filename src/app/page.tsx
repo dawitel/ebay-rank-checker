@@ -14,7 +14,7 @@ export default function Home() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("/api/upload", {
+      const response = await fetch("/api/v1/upload", {
         method: "POST",
         body: formData,
       });
@@ -30,7 +30,7 @@ export default function Home() {
       } else {
         toast({
           variant: "destructive",
-          title: "Sorry, Failked to upload your file ",
+          title: "Sorry, Failed to upload your file ",
           description: "Please try uploading the file again",
           action: <ToastAction altText="try again">Try again</ToastAction>,
         });
@@ -52,12 +52,18 @@ export default function Home() {
           👋Hi Yoshi!
         </p>
         <h1 className="font-sans text-balance font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
-          Upload Your CSV file 📁
+          Upload Your CSV file{" "}
+          <span className="cursor-pointer hover:translate-y-3 hover:shadow-xl">
+            📁
+          </span>
         </h1>
         <p className="max-w-[42rem] mt-5 leading-normal text-muted-foreground sm:text-xl sm:leading-8">
           Drop the CSV file here and wait for the result to be droped in your
-          inbox.
+          inbox.{" "}
         </p>
+          <p className="rounded-2xl bg-gray-200 font-bold transition px-4 py-1.5 text-sm mb-3">
+            Avg. waiting time is 5.5 minutes
+          </p>
         <div>
           <CsvUpload onFileUpload={handleFileUpload} />
         </div>

@@ -41,15 +41,22 @@ export async function POST(req: Request) {
     };
     pump().catch(reject);
   });
-
-  const response = await axios.post("http://localhost:3000/api/scrape", {
-    filePath,
-  });
-  if (response.status != 200) {
-    return NextResponse.json(
-      { message: "Failed to send file path" },
-      { status: 500 }
-    );
+  try {
+    const url = "http://localhost:3000/api/v1/scrape";
+    const response = await axios.post(url, {
+      filePath,
+    });
+    if (response.status != 200) {
+      return NextResponse.json(
+        { message: "Failed to send file path" },
+        { status: 500 }
+      );
+    }
+    return NextResponse.json({
+      message: "File path sent successfully",
+    });
+  } catch (error) {
+    console.log("🔴Failed to send the file path: ", error);
   }
 
   return NextResponse.json({
